@@ -1,0 +1,12 @@
+dist
+node_modules
+
+#sqlite
+*.sqlite
+*.sqlite-journal
+
+#yarn 
+yarn-error.log
+yarn.lock
+
+.env
