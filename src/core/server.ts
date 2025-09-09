@@ -1,3 +1,4 @@
+import cors from "cors";
 import express, { Application } from "express";
 import transcriptsRouter from "../app/transcript/transcriptsRouter";
 import db from "../config/db/sqlite";
@@ -45,6 +46,7 @@ class Server {
   };
 
   middlewares = () => {
+    this.app.use(cors());
     this.app.use(express.json());
   };
 }

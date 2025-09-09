@@ -20,4 +20,5 @@ export const createTranscriptSchema = Joi.object({
       "array.min": "La transcripción debe contener al menos una entrada.",
       "array.base": 'El campo "transcript" debe ser un arreglo.',
     }),
+  model: Joi.string().optional(),
 });
