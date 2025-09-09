@@ -18,12 +18,12 @@ export class AIService {
 
     this.openAIClient = new OpenAI({
       apiKey: apiKey,
-      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
+      baseURL: "https://openrouter.ai/api/v1",
     });
   }
   public async getAnalysis(
     prompt: string,
-    modelIdentifier: string = "gemini-2.5-flash"
+    modelIdentifier: string = "gpt-5-nano"
   ): Promise<any> {
     try {
       const params: ChatCompletionCreateParams = {
